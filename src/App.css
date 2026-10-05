@@ -1,0 +1,15 @@
+nav{
+    display: inline-flex;
+    width: 100vw;
+    background-color: bisque;
+    padding: 20px;
+    justify-content: space-around;
+    
+    
+}
+nav .Link{
+    padding: 10px;
+    color: rgb(14, 15, 14);
+    background-color:bisque;
+
+}
