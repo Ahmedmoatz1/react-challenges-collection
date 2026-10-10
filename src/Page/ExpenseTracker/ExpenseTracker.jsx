@@ -10,13 +10,13 @@ function ExpenseTracker() {
     function ddd(e) {
         e.preventDefault();
         const newexpense = {
-          id: Date.now(), // 👈 1. تصحيح Date بدلاً من Data
+          id: Date.now(), 
           amount: amount,
           day: day
         }
         setExpenses([...expenses, newexpense]);
         
-        // 👈 2. تصحيح setday و setamount لتبدأ بحرف صغير كما عرّفتها فوق
+        
         setday("");
         setamount(50);
     }
@@ -27,7 +27,7 @@ function ExpenseTracker() {
       
       <div>
         {expenses.map((item) => (
-          // 👈 3. إضافة key للمساعدة في أداء React
+          
           <div key={item.id}>
             <p>{item.day}</p>
             <p>{item.amount}</p>

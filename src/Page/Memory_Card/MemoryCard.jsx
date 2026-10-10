@@ -43,24 +43,20 @@ const MemoryCard = () => {
       return;
     }
 
-    // قلب الكارت المحدّد
     const updatedCards = cards.map((card) =>
       card.id === clickedCard.id ? { ...card, isFlipped: true } : card
     );
     setCards(updatedCards);
 
-    // إضافة الكارت إلى قائمة الكروت المفتوحة حالياً
     const newFlippedCards = [...flippedCards, clickedCard];
     setFlippedCards(newFlippedCards);
 
-    // 4. فحص المطابقة عند فتح كارتين
     if (newFlippedCards.length === 2) {
       checkForMatch(newFlippedCards, updatedCards);
     }
   };
 
   const checkForMatch = ([firstCard, secondCard], currentCards) => {
-    // إذا تطابق الاسمان
     if (firstCard.name === secondCard.name) {
       setCards((prevCards) =>
         prevCards.map((card) =>
@@ -69,7 +65,6 @@ const MemoryCard = () => {
       );
       setFlippedCards([]);
     } else {
-      // إذا لم يتطابقا: ننتظر ثانية ثم نعيد قلبهما
       setIsLockGrid(true);
       setTimeout(() => {
         setCards((prevCards) =>
@@ -81,7 +76,7 @@ const MemoryCard = () => {
         );
         setFlippedCards([]);
         setIsLockGrid(false);
-      }, 1000); // 1 ثانية لمشاهدة الكارت الثاني قبل الإغلاق
+      }, 1000);
     }
   };
 

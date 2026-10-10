@@ -1,6 +1,5 @@
 import React from 'react';
 
-// استلام دالة الحذف عبر الـ Props
 function DataDelete({ onDelete }) {
   return (
     <div>

@@ -1,12 +1,10 @@
-/* الحاوية الرئيسية للتأثير ثلاثي الأبعاد */
 .cardContainer {
   width: 200px;
   height: 280px;
-  perspective: 1000px; /* بيدي عمق للـ 3D */
+  perspective: 1000px; 
   cursor: pointer;
 }
 
-/* الكارت نفسه */
 .card {
   width: 100%;
   height: 100%;
@@ -15,7 +13,6 @@
   transition: transform 0.6s ease;
 }
 
-/* التدوير عند الضغط */
 .flipped {
   transform: rotateY(180deg);
 }
@@ -26,7 +23,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* بيخفي الضهر لما يلف */
+  backface-visibility: hidden; 
   display: flex;
   justify-content: center;
   align-items: center;

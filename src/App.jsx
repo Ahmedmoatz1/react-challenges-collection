@@ -7,6 +7,7 @@ import ExpenseTracker from './Page/ExpenseTracker/ExpenseTracker'
 import Filter from './Page/Filter-map/Filter'
 import Counter from './Page/Counter/Counter'
 import MemoryCard from './Page/Memory_Card/MemoryCard'
+import DoubleFetching from './Page/Double-Fetching/DoubleFetching'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
      <Link className='Link' to="/Filter">Filter</Link>
      <Link className='Link' to="/Counter">Counter</Link>
      <Link className='Link' to="/Memory_Card">Memory Card</Link>
+     <Link className='Link' to="/DoubleFetching">DoubleFetching</Link>
      
      </nav>
      <Routes>
@@ -27,6 +29,7 @@ function App() {
         <Route path='/ExpenseTracker' element={<ExpenseTracker/>}/>
         <Route path='/Counter' element={<Counter/>}/>
         <Route path='/Memory_Card' element={<MemoryCard/>}/>
+        <Route path='/DoubleFetching' element={<DoubleFetching/>}/>
         
     </Routes>
     </>

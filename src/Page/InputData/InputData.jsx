@@ -5,7 +5,6 @@ const InputData = () => {
   const [text, setText] = useState([]);
   const [inputtext, setinputtext] = useState("");
 
-  // دالة الإضافة
   function ddd() {
     if (inputtext.trim() === "") return;
     setText([...text, inputtext]);
