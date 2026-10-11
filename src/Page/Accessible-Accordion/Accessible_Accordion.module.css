@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background: #f3f4f6;
+  border: none;
+  cursor: pointer;
+}
+
+.header:hover {
+  background: #e5e7eb;
+}
+
+.content {
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+}
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.open {
+  max-height: 200px;
+}
