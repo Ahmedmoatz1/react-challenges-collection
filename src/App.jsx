@@ -10,6 +10,9 @@ import MemoryCard from './Page/Memory_Card/MemoryCard'
 import DoubleFetching from './Page/Double-Fetching/DoubleFetching'
 import Chrono from './Page/timer/Chrono'
 import AccessibleAccordion from './Page/Accessible-Accordion/AccessibleAccordion'
+import TypeWrite from './Page/Typewriter/TypeWrite'
+import UseToDo from './Page/useToDo/UseToDo'
+
 
 function App() {
   
@@ -25,6 +28,8 @@ function App() {
      <Link className='Link' to="/DoubleFetching">DoubleFetching</Link>
      <Link className='Link' to="/Chrono">Chrono</Link>
      <Link className='Link' to="/Accessible_Accordion">Accessible Accordion</Link>
+     <Link className='Link' to="/Typewriter">Typewriter</Link>
+     <Link className='Link' to="/useToDo">useToDo</Link>
      
      </nav>
      <Routes>
@@ -36,6 +41,7 @@ function App() {
         <Route path='/DoubleFetching' element={<DoubleFetching/>}/>
         <Route path='/Chrono' element={<Chrono/>}/>
         <Route path='/Accessible_Accordion' element={<AccessibleAccordion/>}/>
+        <Route path='/useToDo' element={<UseToDo/>}/>
         
     </Routes>
     </>

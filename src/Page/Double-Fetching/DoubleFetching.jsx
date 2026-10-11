@@ -31,22 +31,22 @@ function DoubleFetching() {
   if (loading) {
     return (
       <div className={styles.contierd}>
-        <h1>Loading...</h1>
+        <h1 className={styles.title}>Loading...</h1>
       </div>
     );
   }
 
   return (
     <div className={styles.contierd}>
-      <h1>Double Fetching</h1>
-      
+      <h1 className={styles.title}>Double Fetching</h1>
+
       <div className={styles.display}>
         {selectedProduct ? (
           <div className={styles.card}>
-            <img 
-              src={selectedProduct.thumbnail} 
-              alt={selectedProduct.title} 
-              className={styles.image} 
+            <img
+              src={selectedProduct.thumbnail}
+              alt={selectedProduct.title}
+              className={styles.image}
             />
             <div className={styles.cardInfo}>
               <h3>{selectedProduct.title}</h3>
@@ -60,9 +60,9 @@ function DoubleFetching() {
 
       <div className={styles.forms}>
         <form onSubmit={handleSearch} className={styles.form}>
-          <input 
-            type="text" 
-            placeholder="Enter product name..." 
+          <input
+            type="text"
+            placeholder="Enter product name..."
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             className={styles.input}
